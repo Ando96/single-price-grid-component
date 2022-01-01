@@ -13,4 +13,67 @@
 
 body {
   font-family: var(--main-font-family);
+  justify-content: center;
+  align-content: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.card {
+  width: 30rem;
+  height: 20rem;
+  padding: 1.6rem;
+  box-sizing: border-box;
+}
+
+.bottom-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.top{
+  background-color: var(--Light-Gray);
+  width: 100%;
+}
+
+.left{
+  background-color: var(--Cyan);
+  width: 50%;
+}
+
+.right{
+    background-color: var(--Bright-Yellow);
+    width: 50%;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+
+  .bottom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-section{
+    flex-direction: column;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .right{
+      width: 100%;
+  }
+
 }
