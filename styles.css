@@ -31,7 +31,7 @@ main {
 .cards-section {
   display: flex;
   flex-direction: column;
-  width: 720px;
+  width: 800px;
   margin-left: 50px;
   margin-right: 50px;
   justify-content: center;
@@ -40,8 +40,8 @@ main {
 
 .card {
   width: 30rem;
-  height: 16rem;
-  padding: 1.6rem;
+  height: 20rem;
+  padding: 1.8rem;
 }
 
 .bottom-cards{
@@ -52,41 +52,64 @@ main {
 .top{
   background-color: white;
   width: 100%;
+  height: 275px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .top>p{
   color: var(--Grayish-Blue);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .top>h1{
   color: var(--Cyan);
+  margin-bottom: 30px;
 }
 
 .top>h2{
   color: var(--Bright-Yellow);
+  font-weight: 700;
 }
 
 .left{
   background-color: var(--Cyan);
   width: 50%;
+  padding: 2.5rem;
+  border-bottom-left-radius: 10px;
+}
+
+.dollar{
+  font-size: 2.5rem;
 }
 
 .left>h2{
   color: white;
+  font-size: 1.4rem;
+  margin-top: 10px;
 }
 
 .left>p{
   color: white;
+  font-size: 1.2rem;
+  margin-bottom: 35px;
 }
 
 .month{
   color: var(--Light-Gray);
   font-weight: lighter;
+  margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 .right{
     background-color: #4bbebc;
     width: 50%;
+    padding-left: 45px;
+    border-bottom-right-radius: 10px; 
 }
 
 .right>h2{
@@ -94,10 +117,14 @@ main {
 }
 
 .right>p{
-  color: white;
+  color: var(--Light-Gray);
+  font-size: 1.1rem;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: lighter;
 }
 
 .btn{
@@ -109,12 +136,13 @@ main {
   background-color: var(--Bright-Yellow);
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 18px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   width: 100%;
   border-radius: 10px;
+  font-size: 1.4rem;
 }
 
 /* MEDIA QUERIES */
@@ -135,6 +163,10 @@ main {
 
   .right{
       width: 100%;
+  }
+
+  .top{
+    height: 23rem;
   }
 
 }
